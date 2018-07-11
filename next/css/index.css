@@ -1,0 +1,43 @@
+@import './nav.css';
+@import './movies.css';
+@import './returnButton.css';
+
+.vanish {
+    display:none;
+}
+
+h1 {
+    padding:0px;
+    margin:0px;
+}
+
+ul {
+    list-style:none;
+    padding:0px;
+    margin:0px;
+}
+
+a {
+    text-decoration:none;
+    color:#ffffff;
+}
+
+.container {
+    background-image:url('../img/cinemaBoard.jpg');
+    background-repeat:no-repeat;
+    background-position:cover;
+    background-size:cover;
+
+    width:100%;
+    height:100vh;
+
+    overflow-y:hidden;
+
+    padding:0px;
+    margin:0px;
+
+    display:grid;
+    grid-template-columns:5% 90% 5%;
+    grid-template-rows:5% 90% 5%;
+}
+

@@ -1,0 +1,126 @@
+
+/* ----- Nav ------ */
+
+/* Show container effects ------------------ */
+/* Hidden the background */
+@keyframes hiddenBackgroundAnimation {
+    0% {
+        visibility:hidden;
+        background-color:rgba(0,0,0,0);
+    }
+    50% {
+        visibility:visible;
+    }
+    100% {
+        visibility:visible;
+        background-color:rgba(0,0,0,0.6);
+    }
+}
+
+.hiddenBackground {
+    animation-name:hiddenBackgroundAnimation;
+    animation-duration:0.5s;
+    animation-fill-mode:forwards;
+}
+
+/* animation for show the contain */
+@keyframes showContainerAnimation {
+    0% { transform:translateY(-160%); }
+    100% { transform:translateY(0%); }
+}
+
+.showContainer {
+    animation-name:showContainerAnimation;
+    animation-duration:0.8s;
+    animation-fill-mode:forwards;
+}
+
+
+/* Hidden container effects ------------------ */
+/* Show the background */
+@keyframes showBackgroundAnimation {
+    0% {
+        visibility:visible;
+        background-color:rgba(0,0,0,0.6);
+    }
+    50% {
+        visibility:hidden;
+    }
+    100% {
+        visibility:hidden;
+        background-color:rgba(0,0,0,0);
+    }
+}
+
+.showBackground {
+    animation-name:showBackgroundAnimation;
+    animation-duration:0.8s;
+    animation-fill-mode:forwards;
+}
+
+/* animation for hidden the contain */
+@keyframes hiddenContainerAnimation {
+    0% { transform:translateY(0%); }
+    100% { transform:translateY(-160%); }
+}
+
+.hiddenContainer {
+    animation-name:hiddenContainerAnimation;
+    animation-duration:0.5s;
+    animation-fill-mode:forwards;
+}
+
+
+/* ----- Section ----- */
+
+/* Red container on section animation ---------------------- */
+/* Takes the red container forward */
+@keyframes redAnimationIn {
+    0% {
+        transform:translate(0px,0px);
+    }
+    25% {
+        transform:translate(90px,140px);
+    }
+    75% {
+        z-index:3;
+        box-shadow:8px 8px 40px #000000;
+    }
+    100% {
+        transform:translate(0px,0px);
+        z-index:3;
+        box-shadow:8px 8px 40px #000000;
+    }
+}
+
+.redIn {
+    animation-name:redAnimationIn;
+    animation-duration:1s;
+    animation-fill-mode:forwards;
+}
+
+/* Rakes the red container backward */
+@keyframes redAnimationOut {
+    0% {
+        transform:translate(0px,0px);
+        z-index:3;
+        box-shadow:8px 8px 40px #000000;
+    }
+    25% {
+        z-index:3;
+        box-shadow:0px 0px 0px #000000;
+    }
+    75% {
+        transform:translate(90px,140px);
+    }
+    100% {
+        transform:translate(0px,0px);
+    }
+}
+
+.redOut {
+    animation-name:redAnimationOut;
+    animation-duration:0.7s;
+    animation-fill-mode:forwards;
+    animation-timing-function:ease-in;
+}

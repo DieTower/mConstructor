@@ -1,0 +1,140 @@
+nav {
+    width:100vw;
+    height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+nav ul {
+    background-color:#2d3436;
+    width:100%;
+    height:100%;
+
+    transition-property:all;
+    transition-duration:0.5s;
+
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    grid-template-rows:repeat(4,1fr);
+}
+
+nav ul li {
+    font-size:16px;
+    font-family:'Roboto',sans-serif;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+nav ul li:nth-child(1) {
+    grid-column:1/3;
+    grid-row:1/3;
+}
+
+nav ul li:nth-child(2) {
+    grid-column:3/5;
+    grid-row:1/3;
+}
+
+nav ul li:nth-child(3) {
+    grid-column:1/3;
+    grid-row:3/5;
+}
+
+nav ul li:nth-child(4) {
+    grid-column:3/5;
+    grid-row:3/5;
+}
+
+nav ul li a {
+    width:100%;
+    height:100%;
+
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items:center;
+}
+
+nav ul li:nth-child(1) a, nav ul li:nth-child(3) a {
+    display:flex;
+    justify-content:flex-end;
+}
+
+nav ul li:nth-child(1) a, nav ul li:nth-child(2) a {
+    display:flex;
+    align-items:flex-end;
+}
+
+nav ul li:nth-child(2) a, nav ul li:nth-child(4) a {
+    display:flex;
+    justify-content:flex-start;
+}
+
+nav ul li:nth-child(3) a, nav ul li:nth-child(4) a {
+    display:flex;
+    align-items:flex-start;
+}
+
+nav ul li a span {
+    font-size:5em;
+
+    /* These margin set the correct gap between the words */
+    margin:8%;
+}
+
+
+/* --- Span effects --- */
+nav ul li a {
+    transition-property:all;
+    transition-duration:0.3s;
+}
+
+nav ul li a span {
+    transition-property:all;
+    transition-duration:0.7s;
+
+    color:#ffffff;
+}
+
+/* --- Keyframe effects --- */
+nav ul li:nth-child(1):hover a span {
+    transform:translateX(-120px) translateY(-60px) rotate(10deg) scale(1.5);
+}
+
+nav ul li:nth-child(2):hover a span {
+    transform:translateX(120px) translateY(-60px) rotate(-10deg) scale(1.5);
+}
+
+nav ul li:nth-child(3):hover a span {
+    transform:translateX(-120px) translateY(60px) rotate(-10deg) scale(1.5);
+}
+
+nav ul li:nth-child(4):hover a span {
+    transform:translateX(120px) translateY(60px) rotate(10deg) scale(1.5);
+}
+
+
+/* --- Nav colors --- */ 
+.homeColor {
+    background-color:#0984e3 !important;
+}
+
+.insertColor {
+    background-color:#25CCF7;
+}
+
+.scriptColor {
+    background-color:#e74c3c;
+}
+
+.expenseColor {
+    background-color:#00b894;
+}
+
+.settingsColor {
+    background-color:#636e72;
+}

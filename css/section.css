@@ -1,0 +1,214 @@
+
+section {
+    grid-column:1/3;
+    grid-row:3/6;
+
+    z-index:1;
+}
+
+/* scrollbar section style ------------- */
+section ::-webkit-scrollbar {
+    width:3px;
+}
+
+section ::-webkit-scrollbar-track {
+    background-color:#f1f1f1;
+    border-radius:40px;
+}
+
+section ::-webkit-scrollbar-track-piece {
+    background-color:none;
+    border-radius:40px;
+}
+
+section ::-webkit-scrollbar-thumb {
+    background-color:#3b3b3b;
+    border-radius:40px;
+}
+
+.sectionContainer {
+    width:100%;
+    height:100%;
+
+    background-image:url("../img/section2.jpg");
+    background-repeat:no-repeat;
+    background-position:cover;
+    background-size:cover;
+
+    display:grid;
+    grid-template-columns:60% 40%;
+    grid-template-rows:50% 50%;
+}
+
+.sectionContainer .first {
+    grid-column:1/2;
+    grid-row:1/3;
+
+    display:grid;
+    grid-template-columns:repeat(6,1fr);
+    grid-template-rows:repeat(8,1fr);
+}
+
+/* General colors styles */
+.colorfulContainer {
+    border-radius:4px;
+
+    display:grid;
+    grid-template-columns:50% 50%;
+    grid-template-rows:25% auto;
+}
+
+/* Container blue style */
+.blueContainer {
+    background-color:#00BFFF;
+    grid-column:2/5;
+    grid-row:2/6;
+    box-shadow:8px 8px 40px #000000;
+
+    transition-property:all;
+    transition-duration:0.5s;
+
+    display:grid;
+    grid-template-columns:50% 50%;
+    grid-template-rows:25% 50% 25%;
+
+    z-index:2;
+}
+
+/* Container title style */
+.blueTitleContainer, .redTitleContainer {
+    grid-column:1/3;
+    grid-row:1/2;
+
+    font-size:16px;
+    
+    display:flex;
+    align-items:center;
+}
+
+.blueTitleContainer p, .redTitleContainer p {
+    width:70%;
+    padding-left:15%;
+    font-family:'Open Sans';
+    font-size:2em;
+    color:#ffffff;
+
+    transition-property:all;
+    transition-duration:0.4s;
+}
+
+/* Container text style */
+.blueTextContainer, .redTextContainer {
+    grid-column:1/3;
+    grid-row:2/3;
+
+    font-size:16px;
+    margin-right:2px;
+    margin-bottom:5%;
+    padding:10%;
+    padding-top:0%;
+    padding-bottom:0%;
+
+    word-wrap:break-word;
+    overflow:auto;
+}
+
+.blueTextContainer p, .redTextContainer p {
+    font-family:'Open Sans';
+    font-size:1.2em;
+    color:#050505;
+
+    transition-property:all;
+    transition-duration:0.2s;
+}
+
+/* It's here */
+.subImgContainer {
+    grid-column:1/3;
+    grid-row:3/4;
+
+    padding:5%;
+    padding-top:0%;
+}
+
+.subImg {
+    width:100%;
+    height:100%;
+    font-size:16px;
+
+    background-image:url('../img/popcorn.jpg');
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:0% 100%;
+
+    box-shadow:1px 1px 4px #000000;
+
+    border-bottom-left-radius:4px;
+    border-bottom-right-radius:4px;
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+}
+
+.subImg p {
+    color:#ffffff;
+    font-family:Lobster;
+    font-size:1.8em;
+    letter-spacing:3px;
+    text-shadow:1px 1px 4px #000000;
+    
+    font-size:3em;
+    transform:rotate(-3deg);
+    cursor:pointer;
+
+    transition-property:all;
+    transition-duration:0.4s;
+}
+
+.subImg:hover p {
+    transform:scale(1.4,1.4) rotate(-4deg);
+    text-shadow:2px 8px 6px #000000;
+}
+
+.removeShadow {
+    box-shadow:0px 0px 0px #000000;
+}
+
+/* Container red style */
+.redContainer {
+    background-color:#F08080;
+    grid-column:3/6;
+    grid-row:4/7;
+
+    z-index:1;
+}
+
+.sectionContainer .second {
+    grid-column:1/3;
+    grid-row:1/3;
+
+    display:grid;
+    grid-template-columns:40% 60%;
+    grid-template-rows:repeat(4,1fr);
+}
+
+.charImgContainer {
+    grid-column:2/3;
+    grid-row:2/4;
+}
+
+.charImg {
+    width:60%;
+    height:90%;
+    margin-left:10%;
+
+    border-radius:4px;
+    box-shadow:0px 0px 360px #ffffff;
+
+    background-image:url("../img/char.jpg");
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:cover;
+}

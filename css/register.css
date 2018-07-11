@@ -1,0 +1,101 @@
+.registerContainer{
+    width:520px;
+    height:525px;
+    padding:10px;
+
+    background-color:#f1f1f1;
+    border-radius:7px;
+
+    display:grid;
+    grid-template-columns:50% 50%;
+    grid-template-rows:18% auto;
+}
+
+.registerHeader {
+    margin:4%;
+    margin-top:0%;
+    margin-bottom:4%;
+    padding:2%;
+    padding-bottom:0px;
+}
+
+.registerHeader .registerTitle span {
+    font-family:'Roboto';
+    font-weight:500;
+    font-size:2.7em;
+    color:#F08080;
+}
+
+.registerForm button {
+    font-size:1.2em;
+    width:90px;
+
+    padding:10px 0px;
+    margin-top:0px;
+
+    border:0px;
+    border-radius:4px;
+    
+    background-color:#F08080;
+    color:#ffffff;
+    cursor:pointer;
+
+    transition-property:all;
+    transition-duration:0.2s;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+
+/* Personal data */
+.personalDiv {
+    width:100%;
+    height:90px;
+    display:grid;
+    grid-template-columns:30% 7% 20% 6% 30%;
+    grid-template-rows:;
+}
+
+.birthdayContainer {
+    grid-column:1/2;
+    max-width:140px;
+}
+
+.birthday {
+    font-size:0.7em !important;
+}
+
+.genderContainer {
+    grid-column:3/4;
+    
+    display:flex;
+    flex-direction:column;
+}
+
+.radioGender {
+    display:flex;
+    flex-direction:row;
+}
+
+#gender {
+    margin-top:-1px;
+    height:45px;
+    border-radius:4px;
+}
+
+.originContainer {
+    grid-column:5/6;
+}
+
+.birthday, .origin {
+    margin-top:5px;
+    height:30px;
+}
+ 
+
+
+
+
+

@@ -1,0 +1,39 @@
+/* Current layout style files */
+@import url("./header.css");
+@import url("./section.css");
+@import url("./footer.css");
+
+/* Layout style for Login and Register */
+@import url("./login.css");
+@import url("./register.css");
+
+/* Animations */
+@import url("./animation.css");
+
+/* Responsive query's */
+@import url("./responsive.css");
+
+
+a { text-decoration:none; }
+
+ul {
+    list-style:none;
+    padding:0px;
+    margin:0px;
+}
+
+.container {
+    width:100%;
+
+    display:grid;
+    grid-template-columns:50% 50%;
+    grid-template-rows:90vh 10vh 10vh 90vh 15vh;
+}
+
+.hidden {
+    visibility:hidden;
+}
+
+.vanish {
+    display:none;
+}

@@ -1,0 +1,142 @@
+.container {
+    background-color:#fdcb6e;
+
+    display:grid;
+    grid-template-columns:10% 80% 10%;
+    grid-template-rows:5% 90% 5%;
+}
+
+.container form {
+    grid-column:2/3;
+    grid-row:2/3;
+
+    min-height:1000px;
+
+    padding:5% 0%;
+    font-size:16px;
+
+    display:flex;
+    flex-direction:column;
+}
+
+/* --- Label's --- */
+.start, .end, .scene {
+    display:flex;
+    flex-direction:column;
+}
+
+label {
+    font-size:2em;
+    color:#ffffff;
+}
+
+.container form input, .container form select, .container form textarea {
+    font-size:2em;
+
+    box-shadow:0px 0px 8px #2d3436;
+
+    padding:10px;
+    margin:20px;
+    margin-left:0px;
+    margin-bottom:40px;
+
+    border:none;
+    border-radius:4px;
+}
+
+.container form #name {
+    min-width:500px;
+    width:40%;
+}
+
+.container form textarea {
+    min-width:400px;
+    min-height:150px;
+
+    width:45%;
+    height:60%;
+
+    resize:none;
+}
+
+.container form input:focus, .container form textarea:focus {
+    outline:none;
+}
+
+.container form .part1 {
+    display:flex;
+    align-items:center;
+}
+
+.container form .part2 {
+    display:flex;
+    align-items:center;
+}
+
+@media (max-width:1100px) {
+    .container {
+        overflow-y:auto !important;
+    }
+
+    .container form .part1 {
+        display:flex;
+        align-items:flex-start;
+        flex-direction:column;
+    }
+    
+    .container form #name {
+        min-width:400px;
+    }
+
+    .container form .part2 {
+        display:flex;
+        align-items:flex-start;
+        flex-direction:column;
+    }
+
+    .backButton {
+        position:absolute;
+        top:40px;
+        left:auto !important;
+        right:40px;
+    }
+}
+
+.container form .part3 {
+    display:flex;
+    flex-direction:column;
+}
+
+.container form .part3 #email {
+    min-width:400px;
+    width:50%;
+}
+
+.container form .part3 #salary {
+    min-width:300px;
+    width:20%;
+}
+
+.container form input[type="time"] {
+    font-size:1.8em;
+    padding:8px;
+}
+
+.container form button {
+    width:90px;
+    height:55px;
+    margin-top:10px;
+
+    cursor:pointer;
+    background-color:#2d3436;
+    border-radius:4px;
+
+    box-shadow:2px 2px 4px #2d3436;
+
+    border:none;
+}
+
+.container form button span {
+    font-size:2em;
+    color:#ffffff;
+}

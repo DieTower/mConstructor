@@ -1,0 +1,139 @@
+nav {
+    background-color:green;
+    width:100%;
+    height:100%;
+
+
+    grid-column:1/2;
+    grid-row:1/4;
+}
+
+nav ul {
+    min-width:110px;
+    width:100%;
+    height:100%;
+
+    padding:8px 0px;
+
+    background-color:#e17055;
+
+    transition-property:all;
+    transition-duration:0.3s;
+
+    display:flex;
+    flex-direction:column;
+}
+
+nav ul li {
+    width:100%;
+    height:12%;
+
+    margin-bottom:1px;
+    cursor:pointer;
+
+    transition-property:all;
+    transition-duration:0.3;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+
+nav ul li .navPart1, nav ul li .navPart2 {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    color:#ffffff;
+}
+
+nav ul li .navPart1 {
+    width:100%;
+    height:50%;
+
+    z-index:1;
+    font-size:50px;
+}
+
+nav ul li .navPart2 {
+    width:100%;
+    height:30%;
+
+    z-index:2;
+    font-size:20px;
+    font-family:"Roboto";
+}
+
+/* --- Buttons interactive effects --- */
+.navPart1, .navPart2 {
+    transition-property:all;
+    transition-duration:0.3s;
+}
+
+.navHome, .navInsert, .navScript, .navExpense, .navSettings {
+    transition-property:all;
+    transition-duration:0.3s;
+}
+
+.navHome:hover .navPart1 {
+    transform:scale(1.6) rotate(-1.8deg);
+}
+
+.navHome:hover .navPart2 {
+    transform:scale(1.5) rotate(1.8deg);
+}
+
+.navInsert:hover .navPart1 {
+    transform:scale(1.6) rotate(1.8deg);
+}
+
+.navInsert:hover .navPart2 {
+    transform:scale(1.5) rotate(-1.8deg);
+}
+
+.navScript:hover .navPart1 {
+    transform:scale(1.6) rotate(1.8deg);
+}
+
+.navScript:hover .navPart2 {
+    transform:scale(1.5) rotate(-1.8deg);
+}
+
+.navExpense:hover .navPart1 {
+    transform:scale(1.6) rotate(-1.8deg);
+}
+
+.navExpense:hover .navPart2 {
+    transform:scale(1.5) rotate(1.8deg);
+}
+
+.navSettings:hover .navPart1 {
+    transform:scale(1.6) rotate(1.8deg);
+}
+
+.navSettings:hover .navPart2 {
+    transform:scale(1.5) rotate(-1.8deg);
+}
+
+
+/* --- Nav colors --- */ 
+.homeColor {
+    background-color:#0984e3 !important;
+}
+
+.insertColor {
+    background-color:#f39c12;
+}
+
+.scriptColor {
+    background-color:#e74c3c;
+}
+
+.expenseColor {
+    background-color:#00b894;
+}
+
+.settingsColor {
+    background-color:#636e72;
+}

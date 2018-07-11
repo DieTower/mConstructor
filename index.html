@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Home</title>
+        
+        <!-- Normalize and current css files -->
+        <link href="./css/normalize.css" rel="stylesheet" type="text/css"/>
+        <link href="./css/index.css" rel="stylesheet" type="text/css"/>
+
+        <!-- fonts, icons and another stuffs -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
+
+    </head>
+
+    <body>
+
+        <div class="container">
+
+            <!-- Login or Register -->
+            <div class="loginOrRegister">
+
+                <!-- Login -->
+                <div class="loginContainer theContainer">
+                    <div class="loginHeader">
+                        <div class="loginTitle"><span>Login</span></div>
+                        <div class="loginExit"><i class="fas fa-times"></i></div>
+                    </div>
+
+                    <form method="post" action="javascript:void(0);" class="loginForm">
+                        <label for="usernameLogin">Username</label>
+                        <input type="text" id="usernameLogin" class="username"/>
+
+                        <label for="passwordLogin">Password</label>
+                        <input type="password" id="passwordLogin" class="password"/>
+
+                        <button class="loginButton">Login</button>
+                    </form>
+                </div>
+
+                <!-- Register -->
+                <div class="registerContainer theContainer">
+                    <div class="registerHeader">
+                        <div class="registerTitle"><span>Register</span></div>
+                        <div class="registerExit"><i class="fas fa-times"></i></div>
+                    </div>
+
+                    <form action="javascript:void(0);" class="registerForm">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email"/>
+
+                        <label for="usernameRegister">Username</label>
+                        <input type="text" id="usernameRegister" class="username"/>
+
+                        <label for="passwordRegister">Password</label>
+                        <input type="password" id="passwordRegister" class="password"/>
+
+                        <label for="confirmPassword">Confirm password</label>
+                        <input type="password" id="confirmPassword"/>
+
+                        <button class="registerButton">Register</button>
+                    </form>
+                </div>
+
+            </div>
+
+            <!-- Current layout -->
+            <header>
+                <nav>
+                    <div class="homeArrow">
+                        <div class="theArrow">
+                            <i class="fas fa-arrow-down"></i>
+                        </div>
+                    </div>
+
+                    <ul class="menu">
+                        <li id="about"><a href="#sectionContainer"><span>About</span></a></li>
+                        <li id="login"><span>Login</span></li>
+                        <li id="register"><span>Register</span></li>
+                    </ul>
+                </nav>
+
+                <div class="headerContainer">
+                    <div class="titleContainer">
+                        <span>M-Constructor</span>
+                    </div>
+                </div>
+            </header>
+
+            <section>
+                <div id="sectionContainer" class="sectionContainer">
+                    <div class="first">
+                        <div class="colorfulContainer blueContainer">
+                            <div class="blueTitleContainer">
+                                <p>About this app</p>
+                            </div>
+
+                            <div class="blueTextContainer">
+                                <p>Whether you are an aspiring/independent movie director, 
+                                    or simply a curious film fan, this application will meet 
+                                    your needs. As a tool used to organize every detail of a 
+                                    movie, from actors participating in it to the budget used 
+                                    on the equipment, it is very handy to help directors as 
+                                    they will be able to organize and supervise every section 
+                                    of the film they are directing, as well as making sure 
+                                    they don't go over the budget.
+                                </p>
+                            </div>
+
+                            <div class="subImgContainer">
+                                <div class="subImg">
+                                    <p>Make your movies!</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="colorfulContainer redContainer">
+                            <div class="redTitleContainer">
+                                <p>Additional Features</p>
+                            </div>
+
+                            <div class="redTextContainer">
+                                <p>Users who create an account have access to the tool that 
+                                    allows them to organize all the details of the movie they 
+                                    plan to direct. This includes the script, the script writers, 
+                                    the directors, the producers, the actors and the character 
+                                    that they play, the set designers, the makeup crew, the special 
+                                    effects crew, the camera crew, and any other people necessary 
+                                    for the creation of a movie, as well as the equipment used for 
+                                    each, such as costumes, cameras and microphones.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="second">
+                        <div class="charImgContainer">
+                            <div class="charImg"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <footer>
+                <div class="footerContainer">
+                    <div class="webDev">
+                        <p>Web Site created by <a href="https://github.com/DieTower" target="_blank"><span>Rodrigo Costa</span></a></p>
+                    </div>
+                </div>
+            </footer>
+
+        </div>
+        
+        <script type="module" src="./js/index.js"></script>
+    </body>
+</html>
