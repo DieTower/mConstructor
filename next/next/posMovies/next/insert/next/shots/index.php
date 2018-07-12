@@ -63,7 +63,8 @@
                         <select name="sceneId" id="scene">
                             <?php
                                 $id = $_SESSION['id'];
-                                $sql = "SELECT * FROM scenes, movies, users WHERE mov_user_id = $id AND sce_mov_id = '$movieId';";
+                                //$sql = "SELECT * FROM scenes, movies, users WHERE mov_user_id = $id AND sce_mov_id = '$movieId';";
+                                $sql = "SELECT * FROM users INNER JOIN movies ON user_id = mov_user_id INNER JOIN scenes ON sce_mov_id = mov_id WHERE mov_user_id = '$id' AND sce_mov_id = '$movieId';";
                                 $query = $conn -> query($sql);
                                 $rows = $query -> num_rows;
 
@@ -74,6 +75,7 @@
                                 }
                             ?>
                         </select>
+                        
                     </div>
                 </div>
 

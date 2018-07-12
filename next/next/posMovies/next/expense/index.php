@@ -118,7 +118,7 @@
 
                         <?php
 
-                            $sql = "SELECT distinct *, (obj_price * obj_amount) as price FROM objects INNER JOIN objects_scenes on os_obj_id = obj_id INNER JOIN scenes on os_sce_id = sce_id INNER JOIN movies on sce_mov_id = mov_id WHERE mov_id = $movieId;";
+                            $sql = "SELECT distinct SUM(obj_price * obj_amount) as price FROM objects INNER JOIN objects_scenes on os_obj_id = obj_id INNER JOIN scenes on os_sce_id = sce_id INNER JOIN movies on sce_mov_id = mov_id WHERE mov_id = $movieId;";
                             $query = $conn -> query($sql);
                             $rows = $query -> num_rows;
 
@@ -152,7 +152,7 @@
                         
                         <?php
 
-                            $sql = "SELECT distinct *, (equip_price * equip_amount) as price FROM equipments INNER JOIN scenes_equipments on se_equip_id = equip_id INNER JOIN scenes on se_sce_id = sce_id INNER JOIN movies on sce_mov_id = mov_id WHERE mov_id = $movieId;";
+                            $sql = "SELECT distinct SUM(equip_price * equip_amount) as price FROM equipments INNER JOIN scenes_equipments on se_equip_id = equip_id INNER JOIN scenes on se_sce_id = sce_id INNER JOIN movies on sce_mov_id = mov_id WHERE mov_id = $movieId;";
                             $query = $conn -> query($sql);
                             $rows = $query -> num_rows;
 

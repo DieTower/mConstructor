@@ -68,7 +68,8 @@
 
                             <select name="sceneId" id="sceneStaffId">
                                 <?php
-                                    $sqlScene = "SELECT * FROM scenes, movies WHERE sce_mov_id = $movieId;";
+                                    //$sqlScene = "SELECT * FROM scenes, movies WHERE sce_mov_id = $movieId;";
+                                    $sqlScene = "SELECT * FROM users INNER JOIN movies ON user_id = mov_user_id INNER JOIN scenes ON sce_mov_id = mov_id WHERE sce_mov_id = '$movieId';";
                                     $queryScene = $conn -> query($sqlScene);
                                     $queryRows = $queryScene -> num_rows;
 
@@ -114,7 +115,8 @@
                             
                             <select id="sceneEquipmentsId">
                                 <?php
-                                    $sqlScene = "SELECT * FROM scenes, movies WHERE sce_mov_id = $movieId;";
+                                    //$sqlScene = "SELECT * FROM scenes, movies WHERE sce_mov_id = $movieId;";
+                                    $sqlScene = "SELECT * FROM users INNER JOIN movies ON user_id = mov_user_id INNER JOIN scenes ON sce_mov_id = mov_id WHERE sce_mov_id = '$movieId';";
                                     $queryScene = $conn -> query($sqlScene);
                                     $queryRows = $queryScene -> num_rows;
 
@@ -158,7 +160,8 @@
                             
                             <select id="sceneActorsId">
                                 <?php
-                                    $sqlScene = "SELECT * FROM scenes, movies WHERE sce_mov_id = $movieId;";
+                                    //$sqlScene = "SELECT * FROM scenes, movies WHERE sce_mov_id = $movieId;";
+                                    $sqlScene = "SELECT * FROM users INNER JOIN movies ON user_id = mov_user_id INNER JOIN scenes ON sce_mov_id = mov_id WHERE sce_mov_id = '$movieId';";
                                     $queryScene = $conn -> query($sqlScene);
                                     $queryRows = $queryScene -> num_rows;
 
@@ -202,7 +205,8 @@
                             
                             <select id="scenesObjectsId">
                                 <?php
-                                    $sqlScene = "SELECT * FROM scenes, movies WHERE sce_mov_id = $movieId;";
+                                    //$sqlScene = "SELECT * FROM scenes, movies WHERE sce_mov_id = $movieId;";
+                                    $sqlScene = "SELECT * FROM users INNER JOIN movies ON user_id = mov_user_id INNER JOIN scenes ON sce_mov_id = mov_id WHERE sce_mov_id = '$movieId';";
                                     $queryScene = $conn -> query($sqlScene);
                                     $queryRows = $queryScene -> num_rows;
 
